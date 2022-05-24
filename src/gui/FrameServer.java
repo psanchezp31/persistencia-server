@@ -23,6 +23,7 @@ public class FrameServer extends JFrame {
     private ImageIcon imageCheck;
     private final JLabel labelGif;
     private final JLabel labelMessage;
+    private final JLabel labelUsers;
 
     public FrameServer(final String title) {
         super(title);
@@ -31,12 +32,17 @@ public class FrameServer extends JFrame {
         labelMessage.setFont(new Font("Sans-Serif", Font.BOLD, 22));
         labelMessage.setAlignmentX(Component.CENTER_ALIGNMENT);
 
+        labelUsers = new JLabel();
+        labelUsers.setFont(new Font("Sans-Serif", Font.BOLD, 22));
+        labelUsers.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         labelGif = new JLabel();
         labelGif.setSize(400, 200);
         labelGif.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         mainPanel = new JPanel();
         mainPanel.add(labelMessage);
+        mainPanel.add(labelUsers);
         mainPanel.add(Box.createRigidArea(new Dimension(0, 40)));
         mainPanel.add(labelGif);
         mainPanel.setBorder(BorderFactory.createEmptyBorder(50, 50, 50, 50));
@@ -63,6 +69,7 @@ public class FrameServer extends JFrame {
 
     public void run() {
         labelMessage.setText("Connecting to Client...");
+        labelUsers.setText("");
         gif = new ImageIcon(this.getClass().getResource("/gui/images/animation.gif"));
         labelGif.setIcon(gif);
 
@@ -89,12 +96,12 @@ public class FrameServer extends JFrame {
 
         imageCheck = new ImageIcon(this.getClass().getResource("/gui/images/check.png"));
         Image getImage = imageCheck.getImage();
-        Image imgScale = getImage.getScaledInstance(400, 400, Image.SCALE_DEFAULT);
+        Image imgScale = getImage.getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon scaledImage = new ImageIcon(imgScale);
 
         labelGif.setIcon(scaledImage);
         labelMessage.setText("Connected Successfully");
-
+        labelUsers.setText("Hola");
     }
 
     private void setSystemLookAndFeel() {
