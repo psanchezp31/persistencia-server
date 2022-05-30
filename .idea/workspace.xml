@@ -9,10 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a219e7-ad1a-4da6-b1f4-34a54a506a98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b1a219e7-ad1a-4da6-b1f4-34a54a506a98" name="Default Changelist" comment="adding labelUsers and .idea from gitignore">
+      <change afterPath="$PROJECT_DIR$/src/service/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/FrameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/FrameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/gui/FrameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/gui/images/animation.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/gui/images/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/FrameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/FrameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/images/animation.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/images/check.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../persistencia-client/network-application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Telecomunicaciones-server/networkApplicationServer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,7 +74,7 @@
       <recent name="D:\Paula\Documents\Courses\Telecomunicaciones-server\networkApplicationServer\src\gui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Client">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -80,6 +88,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.Client" />
+      <module name="networkApplicationServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FrameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.FrameServer" />
       <module name="networkApplicationServer" />
@@ -87,8 +108,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.Server" />
+      <module name="networkApplicationServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.FrameServer" />
+      <item itemvalue="Application.Server" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.FrameServer" />
       </list>
     </recent_temporary>
@@ -110,12 +151,37 @@
       <workItem from="1611692528276" duration="11905000" />
       <workItem from="1611778200353" duration="2209000" />
       <workItem from="1653053926979" duration="663000" />
-      <workItem from="1653353398125" duration="1965000" />
+      <workItem from="1653353398125" duration="14351000" />
+      <workItem from="1653822071892" duration="8094000" />
     </task>
+    <task id="LOCAL-00001" summary="adding labelUsers and .idea from gitignore">
+      <created>1653358553466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653358553466</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding labelUsers and .idea from gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding labelUsers and .idea from gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -124,6 +190,16 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="18" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/service/Server.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/service/Client.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
