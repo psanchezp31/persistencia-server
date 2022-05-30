@@ -5,14 +5,28 @@ import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
+/**
+ * This class defines what a client does when a connection is established, listen and send messages
+ *
+ * @autor Paula Sanchez
+ * @autor Diana Neira
+ * @autor Ramon Barrios
+ */
 public class Client {
     private Socket socket;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
     private String username;
-    private int port;
-    private String IPServer;
 
+    /**
+     * Constructor for the Class Client
+     * Creates a new Client object with the attributes required
+     *
+     * @param socket   socket object for each client
+     * @param username Identifies the logged user
+     */
     public Client(Socket socket, String username) {
         try {
             this.socket = socket;
@@ -24,6 +38,13 @@ public class Client {
         }
     }
 
+    /**
+     * Closes the socket, and the bufferedReader and bufferedWriter
+     *
+     * @param socket
+     * @param bufferedReader
+     * @param bufferedWriter
+     */
     static void close(Socket socket, BufferedReader bufferedReader, BufferedWriter bufferedWriter) {
         try {
             if (bufferedReader != null) {
@@ -40,20 +61,31 @@ public class Client {
         }
     }
 
+    /**
+     * Creates a {@link Client} with a socket object and a username
+     * the client will be listening and sending messages
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-     /*   System.out.println("IP del Servidor: ");
-        String IPServer = scanner.nextLine();
-        System.out.println("Puerto de la conexión: ");
-        int port = scanner.nextInt();*/
         System.out.println("Escriba su nombre: ");
         String username = scanner.nextLine();
-        Socket socket = new Socket("localhost", 9999);
+        System.out.println("IP del Servidor: ");
+        String IPServer = scanner.nextLine();
+        System.out.println("Puerto de la conexión: ");
+        int port = scanner.nextInt();
+        Socket socket = new Socket(IPServer, port);
         Client client = new Client(socket, username);
         client.listenForMessage();
         client.sendMessage();
     }
 
+    /**
+     * Send messages to {@link ClientHandler} while socket is connected
+     * if something went wrong closeEverything method is called to close socket and buffers
+     */
     public void sendMessage() {
         try {
             bufferedWriter.write(username);
@@ -72,6 +104,11 @@ public class Client {
         }
     }
 
+    /**
+     * Listen for messages from the {@link ClientHandler} in separated threads
+     * implements method run from {@link Runnable} interfaces which is the argument for {@link Thread} Class
+     * if something went wrong  closeEverything method is called to close socket and buffers
+     */
     public void listenForMessage() {
         new Thread(new Runnable() {
             @Override
@@ -80,7 +117,12 @@ public class Client {
                 while (socket.isConnected()) {
                     try {
                         messageFromGroupChat = bufferedReader.readLine();
+                        if (messageFromGroupChat == null || messageFromGroupChat.equalsIgnoreCase(username + ": chao")) {
+                            closeEverything(socket, bufferedReader, bufferedWriter);
+                            exit(1);
+                        }
                         System.out.println(messageFromGroupChat);
+
                     } catch (IOException e) {
                         closeEverything(socket, bufferedReader, bufferedWriter);
                     }
@@ -89,6 +131,13 @@ public class Client {
         }).start();
     }
 
+    /**
+     * calls the close method
+     *
+     * @param socket
+     * @param bufferedReader
+     * @param bufferedWriter
+     */
     private void closeEverything(Socket socket, BufferedReader bufferedReader, BufferedWriter bufferedWriter) {
         close(socket, bufferedReader, bufferedWriter);
     }
