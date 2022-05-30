@@ -9,18 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a219e7-ad1a-4da6-b1f4-34a54a506a98" name="Default Changelist" comment="adding labelUsers and .idea from gitignore">
-      <change afterPath="$PROJECT_DIR$/src/service/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/Server.java" afterDir="false" />
+    <list default="true" id="b1a219e7-ad1a-4da6-b1f4-34a54a506a98" name="Default Changelist" comment="code working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/gui/FrameServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/gui/images/animation.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/gui/images/check.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/FrameServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/FrameServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/images/animation.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/images/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
       <recent name="D:\Paula\Documents\Courses\Telecomunicaciones-server\networkApplicationServer\src\gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Server">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -152,7 +145,7 @@
       <workItem from="1611778200353" duration="2209000" />
       <workItem from="1653053926979" duration="663000" />
       <workItem from="1653353398125" duration="14351000" />
-      <workItem from="1653822071892" duration="8094000" />
+      <workItem from="1653822071892" duration="24147000" />
     </task>
     <task id="LOCAL-00001" summary="adding labelUsers and .idea from gitignore">
       <created>1653358553466</created>
@@ -161,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653358553466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="code working">
+      <created>1653921993607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653921993607</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +181,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding labelUsers and .idea from gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding labelUsers and .idea from gitignore" />
+    <MESSAGE value="code working" />
+    <option name="LAST_COMMIT_MESSAGE" value="code working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,16 +191,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="18" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/service/Server.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/service/Client.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
