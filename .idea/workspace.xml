@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="networkApplicationServer:jar" />
+      <artifact name="client:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a219e7-ad1a-4da6-b1f4-34a54a506a98" name="Default Changelist" comment="code working">
+    <list default="true" id="b1a219e7-ad1a-4da6-b1f4-34a54a506a98" name="Default Changelist" comment="chao validation exit, adding javadocs">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/networkApplicationServer_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/networkApplicationServer/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/networkApplicationServer/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +145,7 @@
       <workItem from="1611778200353" duration="2209000" />
       <workItem from="1653053926979" duration="663000" />
       <workItem from="1653353398125" duration="14351000" />
-      <workItem from="1653822071892" duration="24147000" />
+      <workItem from="1653822071892" duration="28929000" />
     </task>
     <task id="LOCAL-00001" summary="adding labelUsers and .idea from gitignore">
       <created>1653358553466</created>
@@ -161,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653921993607</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chao validation exit, adding javadocs">
+      <created>1653945877851</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653945877851</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chao validation exit, adding javadocs">
+      <created>1653945927690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653945927690</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +196,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding labelUsers and .idea from gitignore" />
     <MESSAGE value="code working" />
-    <option name="LAST_COMMIT_MESSAGE" value="code working" />
+    <MESSAGE value="chao validation exit, adding javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="chao validation exit, adding javadocs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
