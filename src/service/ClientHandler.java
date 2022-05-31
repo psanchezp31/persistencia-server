@@ -65,6 +65,7 @@ public class ClientHandler implements Runnable {
 
     /**
      * send the message to other clients except for the same client who is sending
+     * does not return something (void)
      *
      * @param messageToSend message that will be sent to other clients
      */
@@ -86,6 +87,7 @@ public class ClientHandler implements Runnable {
     /**
      * remove the client and let other clients know that this client has abandoned the chat
      * the server also will print that this client has abandoned the chat
+     * does not return something (void)
      */
     public void removeClientHandler() {
         clientHandlers.remove(this);
@@ -94,9 +96,10 @@ public class ClientHandler implements Runnable {
     }
 
     /**
-     * calls the close method
+     * calls the close method and remove the client handler
+     * does not return something (void)
      *
-     * @param socket
+     * @param socket         socket object
      * @param bufferedReader
      * @param bufferedWriter
      */

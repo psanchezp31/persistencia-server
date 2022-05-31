@@ -40,6 +40,7 @@ public class Client {
 
     /**
      * Closes the socket, and the bufferedReader and bufferedWriter
+     * does not return something (void)
      *
      * @param socket
      * @param bufferedReader
@@ -85,6 +86,7 @@ public class Client {
     /**
      * Send messages to {@link ClientHandler} while socket is connected
      * if something went wrong closeEverything method is called to close socket and buffers
+     * does not return something (void)
      */
     public void sendMessage() {
         try {
@@ -108,6 +110,7 @@ public class Client {
      * Listen for messages from the {@link ClientHandler} in separated threads
      * implements method run from {@link Runnable} interfaces which is the argument for {@link Thread} Class
      * if something went wrong  closeEverything method is called to close socket and buffers
+     * does not return something (void)
      */
     public void listenForMessage() {
         new Thread(new Runnable() {
@@ -133,6 +136,7 @@ public class Client {
 
     /**
      * calls the close method
+     * does not return something (void)
      *
      * @param socket
      * @param bufferedReader

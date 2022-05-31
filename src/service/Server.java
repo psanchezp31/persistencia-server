@@ -16,7 +16,7 @@ public class Server {
 
     /**
      * Constructor for the Server Class
-     * @param serverSocket
+     * @param serverSocket  A server socket waits for requests to come in over the network
      */
     public Server(ServerSocket serverSocket) {
         this.serverSocket = serverSocket;
@@ -28,7 +28,7 @@ public class Server {
      * Start the server
      *
      * @param args
-     * @throws IOException
+     * @throws IOException to handle input or output errors
      */
     public static void main(String[] args) throws IOException {
         System.out.println("Esperando un cliente...");
@@ -39,6 +39,7 @@ public class Server {
 
     /**
      * Starts the server, it creates one {@link ClientHandler} per User in a separate {@link Thread}
+     * does not return something (void)
      */
     public void startServer() {
         try {
